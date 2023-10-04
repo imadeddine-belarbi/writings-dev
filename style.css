@@ -88,10 +88,11 @@ main {
 .categories .icons svg {
   font-size: 25px;
   fill: #909090;
-  margin-right: 25px;
+  margin-right: 30px;
 }
 
 .categories ul {
+  flex: 1;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -102,7 +103,7 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  width: 100px;
+  width: 30px;
   height: 100%;
   background: linear-gradient(270deg, #232830 0.01%, rgba(35, 40, 48, 0) 87.5%);
 }
@@ -111,4 +112,5 @@ main {
   font-size: 25px;
   color: #909090;
   margin-right: 25px;
+  text-wrap: nowrap;
 }
