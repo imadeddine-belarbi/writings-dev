@@ -29,6 +29,10 @@ a {
   margin: auto;
 }
 
+.active {
+  color: var(--main-color) !important;
+}
+
 header .links {
   display: flex;
   justify-content: space-between;
@@ -162,4 +166,26 @@ main {
   fill: #4D4D4D;
   width: 3px;
   margin-inline: 10px;
+}
+
+.articles .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles .pagination ul {
+  display: flex;
+}
+
+.articles .pagination a {
+  margin-right: 10px;
+  color: #909090;
+  font-style: italic;
+  font-size: 20px;
+  transition: .4s;
+}
+
+.articles .pagination a:hover {
+  text-decoration: underline;
 }
