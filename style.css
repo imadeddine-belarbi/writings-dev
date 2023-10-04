@@ -1,6 +1,6 @@
 :root {
   --main-color: #FF7575;
-  --section-padding: 60px
+  --section-padding: 60px;
 }
 
 * {
@@ -12,6 +12,14 @@
 body {
   background-color: #232830;
   ;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -31,12 +39,9 @@ h1,
 header .links a {
   color: #FFF;
   font-size: 20px;
-  font-weight: 400;
-  text-decoration: none;
 }
 
 header .links ul {
-  list-style: none;
   display: flex;
 }
 
@@ -54,16 +59,56 @@ header .desc .logo svg {
   width: 200px;
 }
 
-header .desc p:nth-of-type(1) {
+header .desc p:first-of-type {
   color: var(--main-color);
   font-size: 50px;
   font-style: italic;
-  font-weight: 400;
   margin: 20px;
 }
 
-header .desc p:nth-of-type(2) {
+header .desc p:last-of-type {
   color: #FFF;
   font-size: 20px;
-  font-weight: 400px;
+}
+
+main {
+  border-top: 3px solid #4D4D4D;
+  border-bottom: 3px solid #4D4D4D;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+}
+
+.categories .icons {
+  display: flex;
+}
+
+.categories .icons svg {
+  font-size: 25px;
+  fill: #909090;
+  margin-right: 25px;
+}
+
+.categories ul {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.categories ul::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(270deg, #232830 0.01%, rgba(35, 40, 48, 0) 87.5%);
+}
+
+.categories li a {
+  font-size: 25px;
+  color: #909090;
+  margin-right: 25px;
 }
