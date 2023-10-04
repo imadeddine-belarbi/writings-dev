@@ -115,13 +115,13 @@ main {
   text-wrap: nowrap;
 }
 
-.articles {}
-
 .articles .list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 30px;
+  margin-top: var(--section-padding);
+  margin-bottom: var(--section-padding);
 }
 
 .articles .list .card {
