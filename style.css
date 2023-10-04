@@ -189,3 +189,37 @@ main {
 .articles .pagination a:hover {
   text-decoration: underline;
 }
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p a {
+  font-size: 20px;
+  color: white;
+}
+
+footer p span {
+  margin-right: 20px;
+}
+
+.social-link {
+  padding: 5px 10px;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+footer span:last-child svg {
+  fill: white;
+  margin-right: 5px;
+}
