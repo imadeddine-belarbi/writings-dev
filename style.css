@@ -114,3 +114,52 @@ main {
   margin-right: 25px;
   text-wrap: nowrap;
 }
+
+.articles {}
+
+.articles .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.articles .list .card {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.articles .card img {
+  max-width: 100%;
+}
+
+.articles .card h3 {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.articles .card p {
+  color: #232830;
+  margin-bottom: 10px;
+}
+
+.articles .info {
+  display: flex;
+  align-items: center;
+}
+
+.articles .card .info span {
+  font-size: 15px;
+  color: #4D4D4D;
+}
+
+.articles .card .info svg {
+  fill: #4D4D4D;
+  width: 3px;
+  margin-inline: 10px;
+}
